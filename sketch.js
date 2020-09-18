@@ -68,7 +68,7 @@ function draw() {
     ellipse(plinkos[l][0],plinkos[l][1],20,20);
   }
 
-  rand = Math.ceil(random(230,250));
+  rand = Math.ceil(random(50,400));
 
   if(frameCount%60===0){
     particles.push(new Particle(rand,10));
