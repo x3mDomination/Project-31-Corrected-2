@@ -7,6 +7,7 @@ var engine, world;
 var ground,division;
 var plinko1,plinko2;
 var rand,particle;
+var particleCount = 0;
 
 var particles = [];
 var plinkos = [];
@@ -72,6 +73,7 @@ function draw() {
 
   if(frameCount%60===0){
     particles.push(new Particle(rand,10));
+    particleCount++;
   }
 
   for(var j = 0; j < particles.length; j++){
@@ -90,6 +92,7 @@ function draw() {
   }
   */
 
-  
+  textSize(16);
+  text("Number of Particles: "+ particleCount,300,20);
 
 }
